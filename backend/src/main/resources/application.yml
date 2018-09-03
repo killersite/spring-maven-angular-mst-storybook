@@ -1,0 +1,10 @@
+spring:
+  http.encoding.force: true
+  resources.cache-period: 31536000
+
+logging.level:
+  ROOT: INFO
+
+server:
+  port: 9080
+  context-path: /

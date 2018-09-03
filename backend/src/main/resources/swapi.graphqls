@@ -1,0 +1,53 @@
+type Query {
+  hello: String
+
+  # Find Owner by id
+  owner(id: String!): Owner
+  # Find System by id
+  system(id: String!): System
+  # Find ContentHub by id
+  contenthub(id: String!): ContentHub
+  # Find Unit by id
+  unit(id: String!): Unit
+}
+
+# An Owner in the application
+type Owner {
+  # The id of the human
+  id: String!
+  # The name of the human
+  name: String
+  city: String
+  state: String
+
+  systems: [System]
+}
+
+# A ContentHub in the applicaiton
+type ContentHub {
+  # The id of the human
+  id: String!
+  # The name of the human
+  name: String
+
+  units: [Unit]
+}
+
+# A Unit in the app
+type Unit {
+  # The id of the human
+  id: String!
+  # The name of the human
+  name: String
+}
+
+#  A System object
+type System {
+  # The id of the human
+  id: String!
+  # The name of the human
+  name: String
+
+  owner: Owner
+  hubs: [ContentHub]
+}

@@ -1,0 +1,12 @@
+{
+  "me": {
+    "firstName": "Ben",
+    "lastName": "Schochet",
+    "roles": [
+      "ROLE_USER",
+      "ROLE_ADMIN"
+    ]
+  },
+  "posts": [],
+  "comments": []
+}

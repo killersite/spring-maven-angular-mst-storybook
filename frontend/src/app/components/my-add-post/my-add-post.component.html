@@ -1,0 +1,5 @@
+<form class="form-inline" [formGroup]="post" (ngSubmit)="addPost()">
+  <input class="form-control mr-sm-2" formControlName="title" placeholder="Title">
+  <input class="form-control mr-sm-2" formControlName="author" placeholder="Author">
+  <button class="btn btn-outline-primary my-2 my-sm-0" [disabled]="!post.valid" type="submit">Add</button>
+</form>
